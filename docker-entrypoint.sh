@@ -17,5 +17,5 @@ else
   exit 1
 fi
 
-echo "localhost:$FROM => $HOST:$TO"
+echo ":$FROM => $HOST:$TO"
 exec socat TCP-LISTEN:"$FROM",fork TCP4:"$HOST":"$TO"
