@@ -12,11 +12,11 @@ Given the scenario:
 ```
 
 If you need to access from your computer a service running on the **Internal Server**,
-but the VPN/SSH only give you access the **Jump Box** machine. The easiest way to do
+but the VPN/SSH only give you access to the **Jump Box** machine. The easiest way to do
 it is using [socat](http://www.dest-unreach.org/socat/) to create a simple TCP proxy.
 
-But sometime install [socat](http://www.dest-unreach.org/socat/) can be annoying and
+But sometimes install [socat](http://www.dest-unreach.org/socat/) can be annoying and
 you need to remember the syntax.
 
-This docker-image make easer to use [socat](http://www.dest-unreach.org/socat/)
+This docker-image makes easier to use [socat](http://www.dest-unreach.org/socat/)
 with the simple command: `docker run -d -p PORT:PORT robsonpeixoto/simple-tcp-proxy HOST PORT`
